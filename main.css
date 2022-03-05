@@ -1,0 +1,47 @@
+* {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+
+h1 {
+  display: flex;
+  font-family: "Comforter Brush", cursive;
+  font-size: 20vh;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  bottom: 100vh;
+  font-weight: 100;
+}
+
+section#bubbles {
+  height: 100vh;
+}
+
+div.bubble {
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  animation-delay: 1s;
+  animation: bah 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bah {
+  from {
+    height: 0vh;
+    width: 0vh;
+  }
+
+  to {
+    height: 10vh;
+    width: 10vh;
+  }
+}

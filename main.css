@@ -10,21 +10,24 @@ h1 {
   display: flex;
   font-family: "Comforter Brush", cursive;
   font-size: 20vh;
+  width: 100vw;
   color: red;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
-  position: relative;
   bottom: 100vh;
   font-weight: 100;
 }
 
-section#bubbles {
+section {
   height: 100vh;
+  position: absolute;
 }
 
-div.bubble {
+section#bubbles1 div.bubble {
+  height: 10vh;
+  width: 10vh;
   display: inline-block;
   border-radius: 50%;
   position: relative;
@@ -32,6 +35,18 @@ div.bubble {
   animation-delay: 1s;
   animation: bah 2s infinite;
   animation-direction: alternate;
+}
+
+section#bubbles2 div.bubble {
+  height: 10vh;
+  width: 10vh;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  animation-delay: 1s;
+  animation: bah 2s infinite;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes bah {
